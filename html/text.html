@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Detail</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-md-6">
+          <img
+            src="path_to_your_image.jpg"
+            class="img-fluid"
+            alt="Product Image"
+          />
+        </div>
+        <div class="col-md-6">
+          <h2>Product Name</h2>
+          <p class="text-muted">Product Description</p>
+          <p><strong>Price:</strong> $XX.XX</p>
+          <p><strong>Availability:</strong> In Stock</p>
+          <form id="productForm">
+            <div class="form-group">
+              <label for="quantity">Quantity:</label>
+              <input
+                type="number"
+                id="quantity"
+                class="form-control-sm"
+                min="1"
+                value="1"
+                style="width: 50px"
+              />
+            </div>
+            <button type="submit" class="btn btn-primary">Add to Cart</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#productForm").submit(function (event) {
+          event.preventDefault();
+          var quantity = $("#quantity").val();
+          // Do something with the quantity, such as adding the product to the cart
+          console.log("Quantity selected: " + quantity);
+        });
+      });
+    </script>
+  </body>
+</html>

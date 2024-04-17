@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>HoangPhiHung_22639861</title>
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    q
+
+    <script src="../js/jquery-3.7.1.min.js"></script>
+
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+    <!-- Dacing Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Roboto Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/home.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <nav class="position-relative navbar navbar-expand-lg bg-transparent">
+          <div class="navbar-brand">
+            <a class="text-white" href="#">PhiHung.VN</a>
+          </div>
+
+          <button
+            class="navbar-toggler text-white"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="navbar-nav nav-center">
+              <li class="nav-item">
+                <a class="nav-link" href="">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="product.html">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i class="fa-solid fa-user"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+              </li>
+              <!-- <button type="button" class="btn btn-primary" id="myBtn">
+                Đăng nhập
+              </button> -->
+              <li class="nav-item">
+                <a class="ml-2 btn-primary text-decoration-none" id="myBtn"
+                  >Đăng Nhập
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="ml-2 btn-primary text-decoration-none" id="myBtn1"
+                  >Đăng Ký</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <main>
+          <div class="banner">
+            <h5 class="banner-title">Uy tín tạo niềm tin!</h5>
+            <p class="banner-paragraph">
+              Tại đây, chúng tôi tự hào là địa chỉ tin cậy dành cho những người
+              yêu âm nhạc và đam mê sáng tạo. Với một bộ sưu tập đa dạng và
+              phong phú từ nhạc cụ dân tộc đến nhạc cụ hiện đại, chúng tôi cam
+              kết mang đến cho bạn trải nghiệm mua sắm thú vị và đầy cảm hứng.
+            </p>
+
+            <a
+              href="../html/product.html"
+              class="btn-primary text-decoration-none"
+              >BUY NOW</a
+            >
+          </div>
+        </main>
+      </div>
+    </div>
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Modal Heading</h4>
+            <button type="button" class="close" data-dismiss="modal">×</button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="input-login-username"
+                  placeholder="Enter email"
+                  name="email"
+                />
+              </div>
+              <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="input-login-password"
+                  placeholder="Enter password"
+                  name="pswd"
+                />
+              </div>
+              <div class="form-group form-check">
+                <label class="form-check-label">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="remember"
+                  />
+                  Remember me
+                </label>
+              </div>
+              <button
+                type="submit"
+                class="btn btn-primary"
+                id="login_signInButton"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="myModal1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Modal Heading</h4>
+            <button type="button" class="close" data-dismiss="modal">×</button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="input-signup-username"
+                  placeholder="Enter email"
+                  name="email"
+                />
+              </div>
+              <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="input-signup-password"
+                  placeholder="Enter password"
+                  name="pswd"
+                />
+              </div>
+              <div class="form-group">
+                <label for="pwd">Xac nhan Password:</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="input-signup-password-a"
+                  placeholder="Enter password"
+                  name="pswd"
+                />
+              </div>
+              <div class="form-group form-check">
+                <label class="form-check-label">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="remember"
+                  />
+                  Remember me
+                </label>
+              </div>
+              <button
+                type="submit"
+                class="btn btn-primary"
+                id="signup_signInButton"
+              >
+                signup
+              </button>
+            </form>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    $(document).ready(function () {
+      $("#myBtn").click(function () {
+        $("#myModal").modal();
+      });
+    });
+
+    $(document).ready(function () {
+      $("#myBtn1").click(function () {
+        $("#myModal1").modal();
+      });
+    });
+
+    const inputUsernameRegister = document.querySelector(
+      "#input-signup-username"
+    );
+    const inputPasswordRegister = document.querySelector(
+      "#input-signup-password"
+    );
+    const btnRegister = document.querySelector("#signup_signInButton");
+
+    // validation form register and register user local storage
+
+    btnRegister.addEventListener("click", (e) => {
+      e.preventDefault();
+      if (
+        inputUsernameRegister.value === "" ||
+        inputPasswordRegister.value === ""
+      ) {
+        alert("vui lòng không để trống");
+      } else {
+        // array user
+        const user = {
+          username: inputUsernameRegister.value,
+          password: inputPasswordRegister.value,
+        };
+        let json = JSON.stringify(user);
+        localStorage.setItem(inputUsernameRegister.value, json);
+        alert("Đăng Ký Thành Công");
+        window.location.href = "home.html";
+      }
+    });
+
+    // validation form login
+    const inputUsername = document.querySelector("#input-login-username");
+    const inputPassword = document.querySelector("#input-login-password");
+    const btnLogin = document.querySelector("#login_signInButton");
+
+    // validation form login
+
+    btnLogin.addEventListener("click", (e) => {
+      e.preventDefault();
+      if (inputUsername.value === "" || inputPassword.value === "") {
+        alert("vui lòng không để trống");
+      } else {
+        const user = JSON.parse(localStorage.getItem(inputUsername.value));
+        if (
+          user.username === inputUsername.value &&
+          user.password === inputPassword.value
+        ) {
+          alert("Đăng Nhập Thành Công");
+          window.location.href = "home.html";
+        } else {
+          alert("Đăng Nhập Thất Bại");
+        }
+      }
+    });
+  </script>
+</html>
